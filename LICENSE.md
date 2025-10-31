@@ -1,6 +1,6 @@
 # MIT License
 
-Copyright (c) 2025 `ossUser` & `cubedisk`
+Copyright (c) 2025 `cubedisk` & `ossUser`.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the “Software”), to deal
