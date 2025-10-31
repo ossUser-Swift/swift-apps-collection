@@ -49,7 +49,7 @@ Now it’s growing into a small ecosystem of creative, open-source Swift apps.
 | Name | GitHub |
 |------|---------|
 | ossUser | https://github.com/ossUser-Swift |
-| cubedisk | https://github.com/cubedisk/swift-playgrounds-ai-apps/commits?author=cubedisk) |
+| cubedisk | https://github.com/cubedisk |
 
 ---
 
