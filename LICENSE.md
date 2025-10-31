@@ -1,6 +1,6 @@
 # Modified MIT License (Non-Commercial)
 
-Copyright (c) 2025 ossUser & cubedisk
+Copyright (c) 2025 `ossUser` & `cubedisk`
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the “Software”), to use,
 copy, modify, merge, publish, and distribute copies of the Software **for
