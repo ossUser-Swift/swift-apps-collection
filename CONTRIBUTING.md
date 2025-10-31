@@ -9,7 +9,7 @@ We welcome contributions from developers, designers, and AI enthusiasts.
 ## 🛠 Getting Started
 
 1. **Fork the repo** or clone it locally:
-    git clone https://github.com/yourusername/swift-apps-collection.git
+    git clone https://github.com/ossUser-Swift/swift-apps-collection.git
     cd swift-apps-collection
 
 2. **Create a branch** for your work:
