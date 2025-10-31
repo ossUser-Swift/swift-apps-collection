@@ -48,10 +48,8 @@ Now it’s growing into a small ecosystem of creative, open-source Swift apps.
 
 | Name | GitHub |
 |------|---------|
-| [Your Name] | [@yourgithub](https://github.com/yourgithub) |
-| [Friend 1] | [@friend1](https://github.com/friend1) |
-| [Friend 2] | [@friend2](https://github.com/friend2) |
-| [Friend 3] | [@friend3](https://github.com/friend3) |
+| [ossUser] | [(https://github.com/yourgithub) |
+| [cubedisk] | [(https://github.com/cubedisk/swift-playgrounds-ai-apps/commits?author=cubedisk) |
 
 ---
 
