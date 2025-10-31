@@ -1,25 +1,28 @@
 # 🌐 AI Browser Pro
 
 **AI Browser Pro** is an experimental, AI-powered web browser built with **Swift** and **Swift Playgrounds**.  
-It blends intelligence, performance, and design into a lightweight, customizable browsing experience — all powered by Apple’s native frameworks.
+It combines intelligent browsing, customization, and smooth design — powered by **Groq API integration**, added through a guided **Setup Wizard**.
 
 ---
 
 ## ✨ Overview
 
-AI Browser Pro is part of the **Swift Apps Collection**, a growing suite of creative, AI-assisted experiments.  
-It brings together **modern web navigation**, **on-device performance**, and **AI-assisted workflows** — wrapped in a clean, minimal **Liquid Glass UI**.
+AI Browser Pro is part of the **Swift Apps Collection**, a growing suite of AI-assisted projects exploring creativity and functionality in Swift.  
+It merges **modern web browsing** with **personal AI assistance**, offering a unique balance of performance, aesthetics, and intelligence.
 
-> Designed for learning, creativity, and exploration — not for commercial use.
+> Designed for exploration, learning, and creative development — *not for commercial use.*
 
 ---
 
 ## 🧠 Core Features
 
-- 🎮 **Gaming Mode** — A distraction-free browsing environment optimized for web games and performance testing.  
-- 🎨 **Theme Personalization** — Customize your browsing experience with dynamic color themes and transparency effects.  
-- 🌍 **Bonjourr.fr Start Page** — Integrated minimal new tab page for fast, aesthetic access to links and time widgets.  
-- 🤖 **AI Sidebar (Groq API)** — An AI assistant built directly into the browser sidebar using your personal Groq API key. Get context-aware insights, page summaries, and interactive chat support.
+- 🧭 **AI Sidebar (Groq API)** – Interact with an AI assistant directly in the browser sidebar using your Groq API key, configured through a Setup Wizard.  
+- ⚙️ **Setup Wizard** – Guides you through entering your API key, setting preferences, and enabling AI features safely.  
+- 🎮 **Gaming Mode** – A focused mode optimized for playing browser-based games with smoother performance.  
+- 🎨 **Theme Personalization** – Switch between custom color schemes, transparencies, and interface effects.  
+- 🌍 **Bonjourr.fr Start Page** – A clean, minimal, and beautiful home page experience integrated by default.  
+- 🪟 **Liquid Glass UI** – A soft, translucent design aesthetic that keeps focus on content.  
+- ⚡ **Swift-Optimized Performance** – Fast, responsive, and efficient, powered by native Apple frameworks.
 
 ---
 
@@ -31,7 +34,8 @@ It brings together **modern web navigation**, **on-device performance**, and **A
 | **Frameworks** | WebKit, SwiftUI, UIKit |
 | **Platform** | iPad (Swift Playgrounds) / macOS (Xcode) |
 | **Design System** | Liquid Glass UI |
-| **AI Components** | Groq API integration, on-device ML logic |
+| **AI Backend** | Groq API |
+| **AI Configuration** | Added through in-app Setup Wizard |
 
 ---
 
@@ -45,35 +49,28 @@ cd swift-apps-collection/AI-Browser-Pro
 
 ### 2. Open the Project
 - On **iPad**, open the `.swiftpm` or `.playground` file in **Swift Playgrounds**.  
-- On **Mac**, open in **Xcode** and run the project.
+- On **Mac**, open in **Xcode** and build/run the project.
 
-### 3. Configure AI Access
-To use the AI Sidebar, you’ll need a **Groq API key**.  
-Set it in your app configuration (inside `AIConfig.swift` or as a Playground constant).
+### 3. Run the Setup Wizard
+When you launch AI Browser Pro for the first time:
+1. Enter your **Groq API key**.  
+2. Choose whether to enable the **AI Sidebar**.  
+3. Select your **theme** and **start page**.  
+4. Save your preferences and start browsing!
 
-```swift
-let GROQ_API_KEY = "your_api_key_here"
-```
-
-> ⚠️ Keep your API key private. Do not commit it to public repositories.
-
-### 4. Explore the Features
-- Switch between **Gaming Mode** and **Browsing Mode** from the settings menu.  
-- Personalize your **theme** through the built-in style selector.  
-- Enjoy a clean **Bonjourr.fr start page** on new tabs.  
-- Access the **AI Sidebar** to summarize content or chat in real-time.
+> ⚠️ Keep your API key private — it is stored locally and never uploaded or shared.
 
 ---
 
 ## 🧠 AI & Ethical Use
 
-AI Browser Pro was built **with assistance from AI tools** and guided by human creativity and review.  
-It follows **AI-Accredited Development Principles**, prioritizing ethical AI integration, privacy, and transparency.
+AI Browser Pro was built **with the assistance of AI tools** and guided by human review.  
+It follows **AI-Accredited Development Practices**, emphasizing ethical experimentation, privacy, and transparency.
 
 > ⚠️ **Disclaimer**  
-> AI Browser Pro is an educational and experimental app.  
-> It should **not** be used for automated scraping, bypassing restrictions, or any unethical data access.  
-> The developers take **no liability** for misuse or modification of this software.
+> - AI Browser Pro is for educational and creative purposes only.  
+> - It should **not** be used to bypass restrictions, scrape content, or automate unauthorized access.  
+> - The developers take **no liability** for misuse or modified versions.
 
 ---
 
@@ -81,31 +78,30 @@ It follows **AI-Accredited Development Principles**, prioritizing ethical AI int
 
 This project is distributed under the **[Modified MIT License (Non-Commercial)](../LICENSE.md)**.  
 You may:
-- Study, remix, and adapt it for learning.  
-- Use it privately or for non-commercial experimentation.  
+- Study, remix, and adapt it for learning or personal experimentation.  
 
 You may **not**:
 - Redistribute or sell commercially.  
-- Remove AI attribution or ethical notices.
+- Remove credit or licensing information.
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions!  
+We welcome community contributions!  
 Please read the [CONTRIBUTING.md](../CONTRIBUTING.md) before submitting pull requests.
 
 Ways to contribute:
-- Improve the Swift codebase.  
-- Enhance Liquid Glass UI design.  
-- Suggest ethical AI improvements or new features.  
-- Fix bugs or refine the Groq API integration.
+- Enhance Liquid Glass UI or performance.  
+- Add AI Sidebar improvements.  
+- Improve the Setup Wizard or settings system.  
+- Suggest ethical browsing or educational features.
 
 ---
 
 ## 🧭 Vision
 
-AI Browser Pro represents a step toward **personalized, intelligent, and ethical web exploration**.  
-It’s designed not to replace human browsing, but to **augment it** — blending design, performance, and responsible AI into one experience.
+AI Browser Pro represents a glimpse into **the future of personal, AI-assisted browsing** — built with transparency, creativity, and performance in mind.  
+It’s not about automation, but about **enhancing how humans interact with the web**.
 
 > **Built by friends. Guided by AI. Shared with the world.**
