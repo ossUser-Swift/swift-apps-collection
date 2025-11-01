@@ -1,3 +1,14 @@
+![Swift 6](https://img.shields.io/badge/Swift-6-F05138?logo=swift&logoColor=white)
+![Open Source](https://img.shields.io/badge/Open%20Source-2EC866?logo=github&logoColor=white)
+![ossUser](https://img.shields.io/badge/ossUser-0078D4)
+![CubeDisk](https://img.shields.io/badge/cubedisk-7B3FE4)
+![Powered by AI](https://img.shields.io/badge/Powered%20by%20AI-9B5DE5?logo=openai&logoColor=white)
+![Claude Integrated](https://img.shields.io/badge/Claude-886CE4?logo=anthropic&logoColor=white)
+
+
+
+
+
 # 🚀 Swift Apps Collection
 
 A growing collection of **Swift apps and experiments** built with the assistance of **AI tools** and **Swift Playgrounds** on iPad — blending creativity, learning, and technology.  
