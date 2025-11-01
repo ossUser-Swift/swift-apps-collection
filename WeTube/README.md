@@ -4,14 +4,13 @@
 It’s designed for smooth offline playback, simple navigation, and a focus on visual polish.  
 
 <p align="center">
- ![Swift 6](https://img.shields.io/badge/Swift-6-F05138?logo=swift&logoColor=white)
-![Open Source](https://img.shields.io/badge/Open%20Source-2EC866?logo=github&logoColor=white)
-![ossUser](https://img.shields.io/badge/ossUser-0078D4)
-![CubeDisk](https://img.shields.io/badge/cubedisk-7B3FE4)
-![Powered by AI](https://img.shields.io/badge/Powered%20by%20AI-9B5DE5?logo=openai&logoColor=white)
-![Claude Integrated](https://img.shields.io/badge/Claude-886CE4?logo=anthropic&logoColor=white)
-
+  <img src="https://img.shields.io/badge/Swift-6-F05138?logo=swift&logoColor=white">
+  <img src="https://img.shields.io/badge/Open%20Source-2EC866?logo=github&logoColor=white">
+  <img src="https://img.shields.io/badge/ossUser-0078D4">
+  <img src="https://img.shields.io/badge/Powered%20by%20AI-9B5DE5?logo=openai&logoColor=white">
+  <img src="https://img.shields.io/badge/Claude-886CE4?logo=anthropic&logoColor=white">
 </p>
+
 
 ---
 
