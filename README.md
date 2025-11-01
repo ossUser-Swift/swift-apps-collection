@@ -9,66 +9,51 @@
 
 
 
-# 🚀 Swift Apps Collection
+# 🧩 Swift Apps Collection
 
-A growing collection of **Swift apps and experiments** built with the assistance of **AI tools** and **Swift Playgrounds** on iPad — blending creativity, learning, and technology.  
+A growing collection of Swift apps and experiments built with Swift Playgrounds on iPad — blending learning projects, creative coding, and spontaneous ideas brought to life.
 
-This repo is a collaborative space for small, intelligent, and visually polished Swift projects — designed by friends, refined by AI, and shared for learning.
-
----
-
-## 📱 Included Apps
-
-### 🧠 AI Browser Pro
-An intelligent browser concept that combines search, summarization, and local AI tools for smarter web interaction — designed for exploration and research.
-
-### 💬 AI Chat
-A conversational assistant prototype that uses AI prompts and custom personality models for creative dialogue and task automation.
-
-### 🎬 WeTube
-**WeTube** is a lightweight **video player** built with **Swift Playgrounds** — designed to play **local video files** only.  
-It features a smooth, translucent **Liquid Glass UI** and a focus on simplicity and user control.
-
-#### ⚠️ Legal & Content Notice
-WeTube is strictly for **local media playback** — personal videos, open-source clips, or other legally owned files.  
-It **does not download, stream, or redistribute** content from YouTube or any online source.
-
-> **Disclaimer:**  
-> WeTube and its contributors take **no responsibility or liability** for pirated or copyrighted material played through the app.  
-> Users are responsible for ensuring all media complies with copyright law.
-
-#### 🤖 Built with AI Collaboration
-WeTube was developed collaboratively with **AI assistance**, combining human creativity and machine precision to explore the future of software design.
+<p align="center">
+  <img src="https://img.shields.io/badge/Swift-6-F05138?logo=swift&logoColor=white">
+  <img src="https://img.shields.io/badge/Open%20Source-2EC866?logo=github&logoColor=white">
+  <img src="https://img.shields.io/badge/ossUser-0078D4?logo=openaccess&logoColor=white">
+  <img src="https://img.shields.io/badge/CubeDisk-7B3FE4?logo=cube&logoColor=white">
+  <img src="https://img.shields.io/badge/Powered%20by%20AI-9B5DE5?logo=openai&logoColor=white">
+  <img src="https://img.shields.io/badge/Claude-886CE4?logo=anthropic&logoColor=white">
+</p>
 
 ---
 
-### 🧩 HTML Runner
-A playful code sandbox for testing and previewing HTML, CSS, and JavaScript directly within Swift Playgrounds — ideal for experimenting with web concepts on iPad.
+## 🧱 Included Projects
+
+| App | Description |
+|-----|--------------|
+| **AI Browser Pro** | An AI-enhanced web browser with Groq-powered sidebar and personalization. |
+| **FrameX** | A local video player for iPad built in Swift Playgrounds — featuring the Liquid Glass UI aesthetic. |
+| **AI Chat** | A customizable AI chat assistant powered by the Groq API, changeable model and system prompt. |
+| **HTML Runner** | A lightweight HTML and JS runner for local resources and games, no AI integration. |
 
 ---
 
-## 💎 Design Language — Liquid Glass UI
-All apps in this collection share a design philosophy inspired by **Liquid Glass UI** —  
-a translucent, fluid aesthetic focused on light, depth, and simplicity.
+## 🧠 AI Accreditation
+
+All projects in this collection are built collaboratively with assistance from AI systems like **ChatGPT (GPT-5)** and **Claude**.  
+We maintain transparency, review all AI-generated code, and credit AI systems used in development.
 
 ---
 
-## 📄 License
-This repository is licensed under a **[Modified MIT License (Non-Commercial)](./LICENSE.md)**.  
-You are free to use, modify, and learn from the code — but **commercial use is not permitted** without written consent from the authors.
+## ⚖️ License
+
+All projects are distributed under the **non-commercial MIT License** (see [LICENSE.md](./LICENSE.md)).  
+You may explore, learn, and modify — but **commercial use or redistribution is not permitted**.
 
 ---
 
-## 💬 Discussions
-We use [GitHub Discussions](./DISCUSSION_GUIDELINES.md) for brainstorming, feedback, and learning together.  
-Feel free to share ideas, report bugs, or suggest improvements!
+## 🔗 Links
+
+- 🌐 GitHub: [Swift Apps Collection](https://github.com/ossUser-Swift/swift-apps-collection)
+- 💬 Discord: *Join our community discussions and contribute ideas.*
 
 ---
 
-## 🌱 Contributing
-Contributions, ideas, and learning experiments are welcome!  
-See our upcoming **`CONTRIBUTING.md`** for collaboration guidelines and setup instructions.
-
----
-
-> **Built by friends. Guided by AI. Shared with the world.**
+> **Built by Friends. Guided by AI.**
