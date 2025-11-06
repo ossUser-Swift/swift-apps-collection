@@ -37,9 +37,9 @@ We welcome contributions from developers, designers, and AI enthusiasts.
 
 - Respect the **[Modified MIT License (Non-Commercial)](./LICENSE.md)** — contributions must also be non-commercial.  
 - **Do not include pirated or copyrighted content.** Only share files you have the legal right to use.  
-- If you use **AI tools** to generate code, note it in your PR for transparency.  
-- Follow the **Liquid Glass UI** design system for interface consistency.  
+- If you use **AI tools** to generate code, note it in your PR for transparency.    
 - Keep commits clean, descriptive, and focused on a single task.
+- Do not add unsafe, inappropriate or suggestive content.
 
 ---
 
