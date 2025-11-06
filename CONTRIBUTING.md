@@ -6,7 +6,7 @@ We welcome contributions from developers, designers, and AI enthusiasts.
 
 ---
 
-## 🛠 Getting Started
+## Getting Started
 
 1. **Fork the repo** or clone it locally:
     git clone https://github.com/ossUser-Swift/swift-apps-collection.git
@@ -33,7 +33,7 @@ We welcome contributions from developers, designers, and AI enthusiasts.
 
 ---
 
-## 📜 Contribution Guidelines
+## Contribution Guidelines
 
 - Respect the **[Modified MIT License (Non-Commercial)](./LICENSE.md)** — contributions must also be non-commercial.  
 - **Do not include pirated or copyrighted content.** Only share files you have the legal right to use.  
@@ -43,7 +43,7 @@ We welcome contributions from developers, designers, and AI enthusiasts.
 
 ---
 
-## 🐛 Issues & Labels
+## Issues & Labels
 
 - `good first issue` → beginner-friendly tasks  
 - `help wanted` → tasks open to contributors  
@@ -54,7 +54,7 @@ We welcome contributions from developers, designers, and AI enthusiasts.
 
 ---
 
-## 💬 Discussions
+## Discussions
 
 Use [GitHub Discussions](./DISCUSSION_GUIDELINES.md) to:
 - Propose new features  
@@ -64,7 +64,7 @@ Use [GitHub Discussions](./DISCUSSION_GUIDELINES.md) to:
 
 ---
 
-## 🌱 Code of Conduct
+## Code of Conduct
 
 - Be respectful, constructive, and collaborative.  
 - Credit others’ work when building upon it.  
@@ -72,8 +72,7 @@ Use [GitHub Discussions](./DISCUSSION_GUIDELINES.md) to:
 
 ---
 
-## ✨ Thank You!
+## Thank You!
 
 By contributing, you help us **learn, innovate, and create ethical, AI-assisted Swift apps together**.  
 
-> **Built by friends. Guided by AI. Shared with the world.**
