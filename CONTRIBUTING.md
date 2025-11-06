@@ -19,7 +19,7 @@ We welcome contributions from developers, designers, and AI enthusiasts.
 
 3. **Make your changes:**
     - Swift code  
-    - UI improvements (follow **Liquid Glass UI** principles)  
+    - UI improvements 
     - Documentation updates  
 
 4. **Commit your changes** with clear messages:
