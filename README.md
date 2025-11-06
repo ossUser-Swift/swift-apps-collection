@@ -47,4 +47,3 @@ You may explore, learn, and modify — but **commercial use or redistribution is
 
 ---
 
-> **Built by Friends. Guided by AI.**
