@@ -1,4 +1,4 @@
-# 🧩 Swift Apps Collection
+# Swift Apps Collection
 
 A growing collection of Swift apps and experiments built with Swift Playgrounds on iPad — blending learning projects, creative coding, and spontaneous ideas brought to life.
 
@@ -15,7 +15,7 @@ A growing collection of Swift apps and experiments built with Swift Playgrounds 
 
 ---
 
-## 🧱 Included Projects
+## Included Projects
 
 | App | Description |
 |-----|--------------|
@@ -26,24 +26,24 @@ A growing collection of Swift apps and experiments built with Swift Playgrounds 
 
 ---
 
-## 🧠 AI Accreditation
+## AI Accreditation
 
 All projects in this collection are built collaboratively with assistance from AI systems like **ChatGPT (GPT-5)** and **Claude**.  
 We maintain transparency, review all AI-generated code, and credit AI systems used in development.
 
 ---
 
-## ⚖️ License
+## License
 
 All projects are distributed under the **non-commercial MIT License** (see [LICENSE.md](./LICENSE.md)).  
 You may explore, learn, and modify — but **commercial use or redistribution is not permitted**.
 
 ---
 
-## 🔗 Links
+## Links
 
-- 🌐 GitHub: [Swift Apps Collection](https://github.com/ossUser-Swift/swift-apps-collection)
-- 💬 Discord: *Join our community discussions and contribute ideas.*
+- GitHub: [Swift Apps Collection](https://github.com/ossUser-Swift/swift-apps-collection)
+- Discord: *Join our community discussions and contribute ideas.*
 
 ---
 
