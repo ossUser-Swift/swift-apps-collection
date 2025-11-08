@@ -1,3 +1,5 @@
+[![Please Star](https://img.shields.io/badge/⭐️_Star_this_repo!-FFD700)](https://github.com/ossUser-Swift/swift-apps-collection/stargazers)
+
 # Swift Apps Collection
 
 A growing collection of Swift apps and experiments built with Swift Playgrounds on iPad — blending learning projects, creative coding, and spontaneous ideas brought to life.
