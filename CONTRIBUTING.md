@@ -8,6 +8,7 @@
   <img src="https://img.shields.io/badge/Powered%20by%20AI-9B5DE5?logo=openai&logoColor=white">
   <img src="https://img.shields.io/badge/Claude-886CE4?logo=anthropic&logoColor=white">
 </p>
+
 Thank you for your interest in contributing!  
 This repository is a **non-commercial, AI-assisted Swift project** built collaboratively by friends.  
 We welcome contributions from developers, designers, and AI enthusiasts.
