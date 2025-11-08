@@ -1,3 +1,4 @@
+[![Please Star](https://img.shields.io/badge/⭐️_Star_this_repo!-FFD700)](https://github.com/ossUser-Swift/swift-apps-collection/stargazers)
 # Security Policy
 <p align="center">
   <img src="https://img.shields.io/badge/Swift-6-F05138?logo=swift&logoColor=white">
