@@ -1,6 +1,6 @@
 [![Please Star](https://img.shields.io/badge/⭐️_Star_this_repo!-FFD700)](https://github.com/ossUser-Swift/swift-apps-collection/stargazers)
 
-[![Join our Discord](https://img.shields.io/badge/Join-Discord-5865F2?logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/qKZEKutR)
+[![Join our Discord](https://img.shields.io/badge/Join-Discord-5865F2?logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/gCeTzyepFg)
 
 # Swift Apps Collection
 
