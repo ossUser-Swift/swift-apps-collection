@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groq Chat Client</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Bitcount Prop Single Ink', monospace;
+            font-weight: 300;
+            background: #1b1817;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: #eae7e0;
+            overflow: hidden;
+        }
+
+        .chat-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            overflow-y: auto;
+            padding: 24px;
+            padding-bottom: 180px;
+        }
+
+        .message {
+            max-width: 800px;
+            margin: 0 auto 32px auto;
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .message-role {
+            font-size: 12px;
+            font-weight: 400;
+            margin-bottom: 8px;
+            color: #8a8379;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .message-content {
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .message.user .message-content {
+            color: #eae7e0;
+        }
+
+        .message.assistant .message-content {
+            color: #d4cfc7;
+        }
+
+        .message-content h1, .message-content h2, .message-content h3 {
+            margin-top: 20px;
+            margin-bottom: 12px;
+            font-weight: 400;
+        }
+
+        .message-content h1:first-child,
+        .message-content h2:first-child,
+        .message-content h3:first-child {
+            margin-top: 0;
+        }
+
+        .message-content h1 {
+            font-size: 20px;
+        }
+
+        .message-content h2 {
+            font-size: 18px;
+        }
+
+        .message-content h3 {
+            font-size: 16px;
+        }
+
+        .message-content p {
+            margin-bottom: 12px;
+        }
+
+        .message-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .message-content ul, .message-content ol {
+            margin-left: 20px;
+            margin-bottom: 12px;
+        }
+
+        .message-content li {
+            margin-bottom: 6px;
+        }
+
+        .message-content code {
+            background: #2b2725;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #e5e0d8;
+        }
+
+        .message-content pre {
+            background: #2b2725;
+            color: #eae7e0;
+            padding: 16px;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin-bottom: 12px;
+            border: 1px solid #3a3633;
+        }
+
+        .message-content pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+
+        .message-content blockquote {
+            border-left: 3px solid #3a3633;
+            padding-left: 16px;
+            margin: 12px 0;
+            color: #8a8379;
+        }
+
+        .message-content table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 12px;
+            border: 1px solid #3a3633;
+        }
+
+        .message-content th,
+        .message-content td {
+            border: 1px solid #3a3633;
+            padding: 10px 12px;
+            text-align: left;
+        }
+
+        .message-content th {
+            background: #2b2725;
+            font-weight: 400;
+        }
+
+        .message-content tr:nth-child(even) {
+            background: #211f1d;
+        }
+
+        .message-content a {
+            color: #d4cfc7;
+            text-decoration: underline;
+        }
+
+        .message-content a:hover {
+            color: #e5e0d8;
+        }
+
+        .message-content hr {
+            border: none;
+            border-top: 1px solid #3a3633;
+            margin: 16px 0;
+        }
+
+        .message-content strong {
+            font-weight: 400;
+            color: #eae7e0;
+        }
+
+        .message-content em {
+            font-style: italic;
+        }
+
+        .input-container {
+            border-top: 1px solid #3a3633;
+            background: #1b1817;
+            padding: 16px 24px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .input-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .status {
+            text-align: center;
+            padding: 8px;
+            font-size: 12px;
+            color: #8a8379;
+            min-height: 28px;
+        }
+
+        .error {
+            color: #e57373;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #3a3633;
+            border-top: 2px solid #d4cfc7;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .input-section {
+            display: flex;
+            gap: 8px;
+            background: #2b2725;
+            border: 1px solid #3a3633;
+            border-radius: 8px;
+            padding: 4px;
+        }
+
+        .input-section textarea {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            background: transparent;
+            color: #eae7e0;
+            resize: none;
+            font-family: 'Bitcount Prop Single Ink', monospace;
+            font-weight: 300;
+            font-size: 14px;
+            min-height: 50px;
+            max-height: 200px;
+        }
+
+        .input-section textarea::placeholder {
+            color: #8a8379;
+        }
+
+        .input-section textarea:focus {
+            outline: none;
+        }
+
+        .input-section button {
+            padding: 12px 20px;
+            background: #d4cfc7;
+            color: #1b1817;
+            border: none;
+            font-weight: 400;
+            cursor: pointer;
+            font-family: 'Bitcount Prop Single Ink', monospace;
+            font-weight: 300;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: background 0.2s;
+            align-self: flex-end;
+        }
+
+        .input-section button:hover {
+            background: #e5e0d8;
+        }
+
+        .input-section button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container" id="chatContainer"></div>
+
+    <div class="input-container">
+        <div class="input-wrapper">
+            <div class="status" id="status"></div>
+            <div class="input-section">
+                <textarea id="messageInput" placeholder="Type your message..." onkeypress="handleKeyPress(event)"></textarea>
+                <button onclick="sendMessage()" id="sendBtn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // INSERT YOUR API KEY HERE (line 239)
+        let apiKey = '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';
+        let conversationHistory = [];
+
+        marked.setOptions({
+            breaks: true,
+            gfm: true
+        });
+
+        function saveApiKey() {
+            const input = document.getElementById('apiKey');
+            apiKey = input.value.trim();
+            if (apiKey) {
+                document.getElementById('status').innerHTML = 'API key saved';
+                setTimeout(() => {
+                    document.getElementById('status').innerHTML = '';
+                }, 2000);
+            }
+        }
+
+        function saveApiKey() {
+            const input = document.getElementById('apiKey');
+            apiKey = input.value.trim();
+            if (apiKey) {
+                document.getElementById('status').innerHTML = 'API key saved';
+                setTimeout(() => {
+                    document.getElementById('status').innerHTML = '';
+                }, 2000);
+            }
+        }
+
+        function handleKeyPress(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        }
+
+        async function sendMessage() {
+            const input = document.getElementById('messageInput');
+            const message = input.value.trim();
+
+            if (!message) return;
+
+            input.value = '';
+            document.getElementById('sendBtn').disabled = true;
+
+            addMessage(message, 'user');
+            conversationHistory.push({ role: 'user', content: message });
+
+            document.getElementById('status').innerHTML = '<div class="loading"></div>';
+
+            try {
+                const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${apiKey}`
+                    },
+                    body: JSON.stringify({
+                        model: 'groq/compound',
+                        messages: conversationHistory,
+                        temperature: 0.7,
+                        max_tokens: 2048
+                    })
+                });
+
+                if (!response.ok) {
+                    const error = await response.json();
+                    throw new Error(error.error?.message || 'API request failed');
+                }
+
+                const data = await response.json();
+                const assistantMessage = data.choices[0].message.content;
+
+                conversationHistory.push({ role: 'assistant', content: assistantMessage });
+                addMessage(assistantMessage, 'assistant');
+
+                document.getElementById('status').innerHTML = '';
+            } catch (error) {
+                document.getElementById('status').innerHTML = `<span class="error">Error: ${error.message}</span>`;
+                conversationHistory.pop();
+            } finally {
+                document.getElementById('sendBtn').disabled = false;
+            }
+        }
+
+        function addMessage(content, role) {
+            const chatContainer = document.getElementById('chatContainer');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${role}`;
+
+            const roleLabel = document.createElement('div');
+            roleLabel.className = 'message-role';
+            roleLabel.textContent = role === 'user' ? 'You' : 'Assistant';
+
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'message-content';
+
+            if (role === 'assistant') {
+                contentDiv.innerHTML = marked.parse(content);
+            } else {
+                contentDiv.textContent = content;
+            }
+
+            messageDiv.appendChild(roleLabel);
+            messageDiv.appendChild(contentDiv);
+            chatContainer.appendChild(messageDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+    </script>
+</body>
+</html>
